@@ -22,7 +22,7 @@
 ### The challenge
 
 Users should be able to:
-- View the Profile Card
+- View the Product Card
 - View the optimal layout for the site depending on their device's screen size
 
 ### Screenshot
