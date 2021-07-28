@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Austinet/product-card.git)
 - Live Site URL: [Live site](https://Austinet.github.io/product-card/)
 
 ## My process
