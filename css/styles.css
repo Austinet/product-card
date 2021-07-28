@@ -1,0 +1,153 @@
+ :root
+    {
+        --color-1: #AEDAA7;
+        --color-2: #C1BDCA;
+        --color-3: #FFFFFF;
+    }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--color-1);
+    line-height: 24px;
+}
+
+.product{
+    width: 800px;
+    margin: 175px auto 0;
+    background: var(--color-3);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.header{
+    height: 50px;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 2px solid var(--color-2);
+}
+.header p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+i{
+    font-size: 18px;
+    margin-right: 4px;
+    color: var(--color-2);
+}
+i:hover{
+    color: var(--color-1);
+ }
+
+.container{
+    display: flex;
+}
+
+.image{
+    width: 350px;
+    padding-top: 50px;
+    text-align: center;
+    border-right: 2px solid var(--color-2);
+}
+
+.details{
+    width: 440px;
+    padding: 25px 15px 60px;
+}
+h1{
+    font-size: 27px;
+}
+h2{
+     font-size: 17px;
+     margin: 7px 0 15px;
+}
+h3{
+    font-size: 32px;
+    margin: 17px auto;
+}
+h3 span{
+    font-size: 28px;
+}
+h3::before{
+    content: "$";
+}
+.details p{
+    width: 85%;
+    margin-bottom: 15px;
+}
+
+.details button{
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid var(--color-2);
+    border-radius: 2px;
+    cursor: pointer;
+    background: var(--color-3);
+}
+.details button:hover{
+    background: var(--color-1);
+    color: var(--color-3);
+}
+.header button{
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+   /* responsiveness */
+@media screen and (max-width:850px){
+    .product{
+        width:90%
+    }
+}
+@media screen and (max-width:630px){
+    .product{
+        margin: 13px auto 2px;
+     }
+     .container{
+         flex-direction: column;
+         width: 100%;
+     }
+     .header p{
+        font-size: 15px;
+   }
+     .image{
+        width: 100%;
+        border: none;
+        padding-top: 30px;
+    }
+    img{
+        width: 45%;
+    }
+    .details{
+        width: 100%;
+         margin: auto; 
+        text-align: center;
+        padding-bottom: 40px;
+    }
+     h1{
+         font-size: 23px;
+     }
+     h2{
+         font-size: 15px;
+     }
+     .details p{
+         margin:auto;
+         width: 85%;
+         margin-bottom: 15px;
+     }  
+}
+
+@media screen and (max-width:295px){
+    .header p{
+         font-size: 12px;
+    }
+}
